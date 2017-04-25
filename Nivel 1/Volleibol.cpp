@@ -9,31 +9,31 @@ int main(){
 		
   cin >> n;
   int aux = 0;
-  int s = 0, b = 0, a =0;
-  int sS = 0, bS = 0, aS =0;
+  double s = 0, b = 0, a =0;
+  double sS = 0, bS = 0, aS =0;
 		
-   while (n != 0) {
-     cin >> nomeJogador;
+  while (n != 0) {
+    cin >> nomeJogador;
 				
-     cin >> aux;
-     s += aux;
+	cin >> aux;
+	s += aux;
 				  
-     cin >> aux; 
-     b += aux;
+	cin >> aux;
+	b += aux;
 				  
-     cin >> aux;
-     a += aux;
+	cin >> aux;
+	a += aux;
 				  
-     cin >> aux;
-     sS += aux;
+	cin >> aux;
+	sS += aux;
 				  
-     cin >> aux;
-     bS += aux;
+	cin >> aux;
+	bS += aux;
 				  
-     cin >> aux;
-     aS += aux;
+	cin >> aux;
+	aS += aux;
 					
-     n--;
+	n--;
 }
 			
 double resultadoSaques = (sS * 100) / s;
@@ -45,5 +45,7 @@ cout<<"Pontos de Bloqueio: "<< std::fixed << std::setprecision(2)<< resultadoBlo
 double resultadoAtaques = (aS * 100) / a;
 cout<< "Pontos de Ataque: " <<std::fixed << std::setprecision(2)<< resultadoAtaques <<" %."<<endl;			
 		
-  return 0;
+		
+		
+ return 0;
 }
