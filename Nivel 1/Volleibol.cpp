@@ -37,13 +37,13 @@ int main(){
 }
 			
 double resultadoSaques = (sS * 100) / s;
-cout<<"Pontos de Saque: "<< std::fixed << std::setprecision(5)<< resultadoSaques <<" %."<<endl;
+cout<<"Pontos de Saque: "<< std::fixed << std::setprecision(2)<< resultadoSaques <<" %."<<endl;
 
 double resultadoBloqueio = (bS * 100) / b;
-cout<<"Pontos de Bloqueio: "<< std::fixed << std::setprecision(5)<< resultadoBloqueio <<" %."<<endl;
+cout<<"Pontos de Bloqueio: "<< std::fixed << std::setprecision(2)<< resultadoBloqueio <<" %."<<endl;
   	    
 double resultadoAtaques = (aS * 100) / a;
-cout<< "Pontos de Ataque: " <<std::fixed << std::setprecision(5)<< resultadoAtaques <<" %."<<endl;			
+cout<< "Pontos de Ataque: " <<std::fixed << std::setprecision(2)<< resultadoAtaques <<" %."<<endl;			
 		
   return 0;
 }
