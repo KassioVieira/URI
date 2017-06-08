@@ -60,25 +60,30 @@ public class MaiorPalindromo{
 
            }
            
+          List<Integer> ls = new ArrayList<>();
           for(int m = 0; m < tamanhos.size(); m++){
 
-                String teste = Collections.max(palidromo);
+                String teste = palidromo.get(m);
                 int freqS = Collections.frequency(palidromo, teste);
 
-                int testeN = Collections.max(tamanhos);
-                System.out.println("M = "+m+" Palavra = "+teste+" Tamanho = "+testeN);
+                int testeN = tamanhos.get(m);
+                 //System.out.println("M = "+m+" Palavra = "+teste+" Tamanho = "+testeN);
                 int freq = Collections.frequency(tamanhos, testeN);
-                 System.out.println("Frequencia Palavra = "+freqS+" Frequencia Tamanho = "+freq);
+                 //System.out.println("Frequencia Palavra = "+freqS+" Frequencia Tamanho = "+freq);
                 if(freq >= n && freqS == n){
-                        System.out.println(testeN);
+                        if(!ls.contains(testeN)){
+                             ls.add(testeN);
+                        }
                 }
-                palidromo.remove(teste);
-                tamanhos.remove(testeN);
-
-                 System.out.println(palidromo);
-                 System.out.println(tamanhos);
-                 System.out.println();
+               // System.out.println(palidromo);
+                palidromo.remove(m);
+                tamanhos.remove(m);
+                
+                 //System.out.println(palidromo);
+                 //System.out.println(tamanhos);
+                // System.out.println();
           }
+          System.out.println(Collections.max(ls));
 
            //System.out.println(palidromo);
            //System.out.println(tamanhos);
